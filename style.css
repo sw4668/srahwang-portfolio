@@ -1,0 +1,514 @@
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .containera {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  header {
+    background: #bbc6ca;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure header is above other content */
+    /* border-bottom: 1px solid red; Temporary border to check the actual bottom */
+    }
+  
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  header img{
+    max-width: 15%;
+    padding-top: 1%;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+
+  nav a:hover {
+    background-color: #FF914D; /* Change the color to your preference */
+    color: #333; /* Change text color to maintain contrast if needed */
+  }
+
+  #about {
+    padding-top: 5%;
+  }
+  .welcome-text {
+    float: right;
+    max-width: 600px;
+    padding-right: 5%;
+    overflow: hidden;
+  }
+
+  .welcome-text h1 {
+    margin-top: -50%;
+  }
+
+  .welcome-text p {
+    font-size: 1.1em;
+    margin-top: -80%;
+    padding-left: 0%;
+    text-align: center;
+  }
+
+  .welcome-image {
+    float: left;
+    margin-left: 10%;
+    margin-top: 7%;
+  }
+
+  
+  .welcome-image img {
+    max-width: 350px;
+    /* border-radius: 5%; */
+    /* filter: blur(5px); */
+  
+    /* border-radius: 1%; */
+  }
+
+  /* .flair img {
+    max-width: 30%;
+
+  } */
+
+
+
+  .type span{
+    display:inline-block;
+    }
+
+    .type h1{
+      overflow: hidden;
+      white-space: nowrap;
+    /*     background-color:green; */
+    }
+    .type{
+      font-family: monospace;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .type h1 span:nth-of-type(1){
+      animation-name:developer;
+      animation-duration:12s;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(9);
+     background-color: #FF914D;
+      
+    }
+    .type h1 span:nth-of-type(2){
+      animation-name:design;
+      animation-duration:12s;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(11);
+      background-color: #FF914D;
+    }
+    .type h1 span:nth-of-type(3){
+      animation-name: prog ;
+      animation-duration:12s;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(9);
+      background-color: #FF914D;
+    }
+    
+    .type h1 span:nth-of-type(4){
+      animation-name: cross ;
+      animation-duration:12s;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(12);
+      background-color: #FF914D;
+    }
+    
+    /* @keyframes developer{
+      0%,30%,100%{
+        width:0;
+      }
+      15% ,22.5%{
+       width: calc(12px * 12);
+      }
+    }
+    @keyframes design{
+      0%,30%,60%,100%{
+        width:0;
+      }
+      45%,50%{
+        width: calc(12px * 20);
+      }
+    }
+      @keyframes prog{
+      0%,60%,90%,100%{
+        width:0;
+      }
+      75%,82%{
+         width: calc(12px * 14);
+      }
+    }
+
+    @keyframes cross{
+      0%, 100%{
+        width:0;
+      }
+      80%,95%{
+         width: calc(12px * 20);
+      }
+    }
+   */
+
+   @keyframes developer {
+    0%, 25%, 100% {
+      width: 0;
+    }
+    10%, 20% {
+      width: calc(12px * 12); /* Adjusted to reflect the length of "developer" */
+    }
+  }
+  
+  @keyframes design {
+    0%, 25%, 50%, 75%, 100% {
+      width: 0;
+    }
+    30%, 45% {
+      width: calc(12px * 20); /* Adjusted for "design" */
+    }
+  }
+  
+  @keyframes prog {
+    0%, 50%, 75%, 100% {
+      width: 0;
+    }
+    55%, 70% {
+      width: calc(12px * 14); /* Adjusted for "prog" */
+    }
+  }
+  
+  @keyframes cross {
+    0%, 75%, 100% {
+      width: 0;
+    }
+    80%, 95% {
+      width: calc(12px * 21); /* Adjusted for "cross" */
+    }
+  }
+  
+
+  
+  
+  
+  /* Base styles */
+body {
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  font-weight: 100;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #bbc6ca;
+}
+
+/*switch styles*/
+
+label {
+  font-size: 13px;
+  color: #424242;
+  font-weight: 500;
+}
+
+.btn-container {
+  margin-top: 46%;
+  text-align: center;
+}
+
+.btn-color-mode-switch{
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner{
+  margin: 0px;
+  width: 140px;
+  height: 30px;
+  background-color: #E0E0E0;
+  border-radius: 26px;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.4s ease-in-out;
+  /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+  display: block;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+  content: attr(data-on);
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  top: 7px;
+  right: 10px;
+
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+  content: attr(data-off);
+  width: 70px;
+  height: 16px;
+  background: #FF914D;
+  border-radius: 26px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 6px -2px #111;
+  padding: 5px 0px;
+}
+
+.btn-color-mode-switch > .alert{
+  display: none;
+  background: #FF9800;
+  border: none;
+  color: orange;
+}
+
+.btn-color-mode-switch input[type="checkbox"]{
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+  background: #E0E0E0;
+  color: #333;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+  content: attr(data-on);
+  left: 68px;
+  background: #FF914D;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
+  content: attr(data-off);
+  right: auto;
+  left: 15px;
+}
+
+
+.btn-color-mode-switch input[type="checkbox"]:checked ~ .alert{
+  display: block;
+}
+
+/* .portfolio {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  height: 300px;
+  margin-top: 5%;
+  margin-bottom: 15%;
+  margin-left: 10%
+} */
+
+/* .work {
+  padding: 2% 10% 5% 2%;
+} */
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding-top: 8%;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between text and image */
+  width: 100%; /* Adjust based on preference */
+  margin-bottom: 2rem; /* Adds space between portfolio items */
+  position: relative;
+}
+
+.portfolio-text, .portfolio-image {
+  flex: 1; /* Allows text and image to take up equal space */
+}
+
+.portfolio-text {
+  max-width: 20%;
+  padding-right: 5%; /* Adds some padding between text and image */
+  padding-left: 10%;
+}
+
+.portfolio-image img {
+  width: 100%; /* Ensures image responsiveness */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Adjust the max-width of the portfolio-image if necessary to control the image size */
+.portfolio-image {
+  max-width: 50%; /* Adjust based on your preference */
+  padding-right: 5%;
+}
+
+/* .portfolio-text h1 {
+    position: relative; 
+    display: inline-block;
+    color: #333;
+
+} */
+
+.portfolio-text {
+  max-width: 20%;
+  padding-right: 5%;
+  padding-left: 10%;
+  position: relative; /* Added line */
+  display: inline-block;
+}
+
+.highlight {
+  display: inline-block;
+  position: absolute;
+  background-color: #FF914D;
+  height: 40px; 
+  width: 0%;
+  transition: width 0.5s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin-top: 1.4%;
+  z-index: -1;
+  top: 20%; /* Adjust this value as needed */
+  transform: translateY(-50%); /* Center vertically relative to the text */
+}
+
+
+.portfolio-item:hover .highlight {
+  width: 300px; 
+}
+
+@media (max-width: 1024px) {
+  .portfolio-text {
+    max-width: 30%; /* Adjusted for medium screens */
+  }
+  /* Add any necessary adjustments for .highlight here */
+}
+
+@media (max-width: 768px) {
+  .portfolio-text {
+    max-width: 40%; /* Adjusted for small screens */
+    padding-right: 2%; /* Potentially adjust padding */
+    padding-left: 5%;
+  }
+  /* Adjust .highlight positioning/sizing for small screens */
+}
+
+@media (max-width: 480px) {
+  .portfolio-text {
+    max-width: 50%; /* Adjusted for extra small screens */
+    padding: 0 10px; /* Example padding adjustment */
+  }
+  /* Adjust .highlight for extra small screens */
+}
+
+
+
+
+/*
+
+.portfolio-item:hover .portfolio-text h1 {
+  background-color: #F2BB05; 
+} */
+
+
+
+
+/* fhviweujfvoiwejo;iwej;ovjweo;fijvo;weifjv;oiewjovij */
+/* .portfolio {
+  background-color: khaki;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 5%;
+  margin-bottom: 15%;
+  margin-left: 5%;
+  width: 100%
+}
+
+
+.portfolio h1, .portfolio p {
+  max-width: 35%;
+  display: block;
+  font-size: 110%;
+
+} 
+
+
+.portfolio img{
+  float: right;
+  margin-right: 10%;
+  margin-top: -10%;
+  transition: 0.5s ease;
+  padding-left: 10%;
+  padding-bottom: 15%;
+} */
+
+/* fekjvhliwjhofvw;oefhvoweofvijhwoehjfv */
+
+/* .portimg1{
+  max-width: 40%; */
+  /* border-radius: 40% 60%;  */
+  /* opacity: 0; */
+/* } */
+
+/* #port1:hover img{
+  opacity: 1;
+}
+
+#port2:hover img{
+  opacity: 1;
+} */
+
+/* .portimg2{ */
+  /* border-radius: 70% 40%; */
+  /* max-width: 40%; kjedsf;klewjifo;jwe;ilfj;oiwejf */
+  /* opacity: 0; */
+/* } */
+
+/* .portfolio:hover portimg1{
+  opacity: 1;
+} */
+
+  footer {
+    background: #bbc6ca;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+  }
+
