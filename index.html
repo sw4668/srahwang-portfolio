@@ -11,6 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/0f96e46d22.js" crossorigin="anonymous"></script>
+
 <style>
 
 </style>
@@ -47,25 +48,37 @@
     <h1 id="typing"> Hi there. I’m Sarah Wang, a  <span> UX Designer.</span><span> Front-End Developer.</span><span>Visual Artist.</span><span>Crossword Enthusiast.</span></h1>
     </div>
 
-    <p>I design thoughtful digital experiences that are beautiful and enjoyable. Check out my work!</p>
+    <p>Hi There! I'm Sarah, a recent NYU grad with a BFA in Interactive Media Arts. I thrive at the intersection of art and technology and aim to create engaging digital experiences. Check out some of my work!</p>
+  
   </div>
+
+  
 
   
 </div>
 
-  <div class="btn-container">
-    <!-- <i class="fa fa-sun-o" aria-hidden="true"></i> -->
+  <!-- <div class="btn-container">
+
       <label class="switch btn-color-mode-switch">
             <input type="checkbox" name="color_mode" id="color_mode" value="1">
             <label for="color_mode" data-on="For Fun" data-off="Projects" class="btn-color-mode-switch-inner"></label>
         </label>
-      <!-- <i class="fa fa-moon-o" aria-hidden="true"></i> -->
-  </div>
+
+  </div> -->
 
     
 
 
 </section>
+
+<div class="btn-container">
+  <!-- <i class="fa fa-sun-o" aria-hidden="true"></i> -->
+    <label class="switch btn-color-mode-switch">
+          <input type="checkbox" name="color_mode" id="color_mode" value="1">
+          <label for="color_mode" data-on="For Fun" data-off="Projects" class="btn-color-mode-switch-inner"></label>
+      </label>
+    <!-- <i class="fa fa-moon-o" aria-hidden="true"></i> -->
+</div>
 
 <section id="work" class="work">
 
@@ -96,7 +109,7 @@
   </div>
   </a>
 
-  <a href="nosh.html" style="text-decoration: none; color: inherit;">
+  <!-- <a href="nosh.html" style="text-decoration: none; color: inherit;">
     <div id="port2" class="portfolio-item">
       <div class="portfolio-text">
         <div class="highlight"></div>
@@ -107,23 +120,124 @@
       <img src="images/nosh.png" class="portimg3">
       </div>
     </div>
-    </a>
+    </a> -->
 
 </div>
 
 <div id="funWork" class="portfolio" style="display: none;">
-  <img src="images/pixelb.PNG">
+
+    <div id="port3" class="portfolio-item">
+      <div class="portfolio-text">
+        <div class="highlight"></div>
+      <h1><span>Human Butterflies</span></h1>
+      <p>AI generated images trained off a dataset.</p>
+      </div>
+      <div class="fun-image">
+      <img src="images/gene.jpg" class="funimg1">
+      </div>
+    </div>
+
+<div id="port4" class="portfolio-item">
+  <div class="portfolio-text">
+    <div class="highlight"></div>
+  <h1><span>NOSH</span></h1>
+  <p>A progressive web app that randomly generates food gifs.</p>
+  </div>
+  <div class="fun-image">
+  <img src="images/nosh.png" class="funimg2">
+  </div>
+</div>
+
+<div id="port5" class="portfolio-item">
+  <div class="portfolio-text">
+    <div class="highlight"></div>
+  <h1><span>VR Landscapes</span></h1>
+  <p>Landscapes created using Unity.</p>
+  </div>
+  <div class="fun-image">
+  <img src="images/vrc.png" class="funimg3">
+  </div>
+</div>
+
+<div id="port6" class="portfolio-item">
+  <div class="portfolio-text">
+    <div class="highlight"></div>
+  <h1><span>Nature City People</span></h1>
+  <p>A book of real and AI-generated images that examines the nuanced ways AI can create misleading perceptions.</p>
+  </div>
+  <div class="fun-image">
+  <img src="images/onea.png" class="funimg4">
+  </div>
+</div>
+
+<div id="port7" class="portfolio-item">
+  <div class="portfolio-text">
+    <div class="highlight"></div>
+  <h1><span>Artworks</span></h1>
+  <p>A book of real and AI-generated images that examines the nuanced ways AI can create misleading perceptions.</p>
+  </div>
+  <div class="fun-image">
+  <img src="images/art2.jpg" class="funimg5">
+  </div>
+</div>
 </div>
 
 </section>
 
 
-<footer id="contact">
-  <h1>Let's make something fun together!</h1>
-  <i class="fa-solid fa-envelope"></i>
-  <i class="fa-brands fa-square-github"></i>
-  <i class="fa-brands fa-linkedin"></i>
-</footer>
+<section id="contact">
+  <!-- <h1>Let's make something fun together!</h1> -->
+  <img src="images/outro.png">
+  <p>Get in touch.</p>
+
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+  <!-- Replace with your Access Key -->
+  <input type="hidden" name="access_key" value="b5135315-48ec-4e42-87f1-242e6ee17aad">
+
+  <!-- Form Inputs. Each input must have a name="" attribute -->
+  <label for="name">Name *</label>
+      <input type="text" name="name" required>
+
+  <label for="email">Email *</label>
+      <input type="email" name="email" required>
+
+  <label for="message">Message *</label>
+      <textarea name="message" required></textarea>
+
+  <!-- hCaptcha Spam Protection -->
+  <div class="form-footer">
+  <div class="h-captcha" data-captcha="true"></div>
+
+  <button type="submit">Submit</button>
+  </div>
+
+  <a href="mailto:srahwang02@gmail.com">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+
+  <a href="https://github.com/sw4668/">
+<i class="fa-brands fa-square-github"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/srahwang/">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+
+</form>
+
+</section>
+<!-- 
+<footer id="footer">
+
+<i class="fa-solid fa-envelope"></i>
+<i class="fa-brands fa-square-github"></i>
+<i class="fa-brands fa-linkedin"></i>
+</footer> -->
+<!-- Required for hCaptcha -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
 
 </body>
 </html>

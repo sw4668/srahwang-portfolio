@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show Fun Work and hide Design
             funWork.style.display = 'block';
             designWork.style.display = 'none';
+
         } else {
             // Show Design and hide Fun Work
             designWork.style.display = 'block';
@@ -88,7 +89,26 @@ document.addEventListener('DOMContentLoaded', function() {
         designWork.style.justifyContent = 'space-between';
         }
     });
+
+
+        // Fade header on scroll
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            var fadeStart = 100;
+            var fadeUntil = 400;
+      
+            var fading = (scrollPosition - fadeStart) / (fadeUntil - fadeStart);
+            if (scrollPosition <= fadeStart) {
+              header.style.opacity = 1;
+            } else if (scrollPosition <= fadeUntil) {
+              header.style.opacity = 1 - fading;
+            } else {
+              header.style.opacity = 0;
+            }
+          });
 });
+
 
 
   
