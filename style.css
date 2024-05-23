@@ -350,6 +350,8 @@ display: block;
 }
 
 
+/* Portfolio section styles */
+
 .portfolio {
 display: flex;
 flex-wrap: wrap;
@@ -360,24 +362,23 @@ padding-top: 8%;
 
 .portfolio-item {
 display: flex;
-align-items: center; /* Align items vertically */
-justify-content: space-between; /* Space between text and image */
-width: 100%; /* Adjust based on preference */
-margin-bottom: 7rem; /* Adds space between portfolio items */
+align-items: center; 
+justify-content: space-between; 
+width: 100%; 
+margin-bottom: 7rem; 
 position: relative;
-/* min-height: 400px; */
 }
 
 .portfolio-text, .portfolio-image {
-flex: 1; /* Allows text and image to take up equal space */
+flex: 1; 
 }
 
 
 .portfolio-text {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* This will center the content vertically */
-  position: relative; /* Ensures that .highlight is positioned relative to this container */
+  justify-content: center;
+  position: relative; 
   padding-right: 5%;
   padding-left: 10%;
 }
@@ -408,31 +409,29 @@ top: 20%;
 transform: translateY(-50%); 
 }
 
-
-
 .portfolio-item:hover .highlight {
 width: 300px; 
 }
 
+
 @media (max-width: 1024px) {
-.portfolio-text {
-  max-width: 30%; /* Adjusted for medium screens */
-}
+  .portfolio-item {
+      flex-direction: column;
+  }
+
+  .portfolio-text {
+      max-width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
-.portfolio-text {
-  max-width: 40%; /* Adjusted for small screens */
-  padding-right: 2%; /* Potentially adjust padding */
-  padding-left: 5%;
-}
-}
+  .portfolio-text {
+      max-width: 90%;
+  }
 
-@media (max-width: 480px) {
-.portfolio-text {
-  max-width: 50%; /* Adjusted for extra small screens */
-  padding: 0 10px; /* Example padding adjustment */
-}
+  .portfolio-item {
+      width: 100%;
+  }
 }
 
 
