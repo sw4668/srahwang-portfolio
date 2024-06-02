@@ -32,13 +32,6 @@ header {
   z-index: 1000; /* Ensure header is above other content */
   }
 
-
-/* header::after {
-  content: '';
-  display: table;
-  clear: both;
-} */
-
 header img{
   max-width: 15%;
   padding-top: 1%;
@@ -332,12 +325,12 @@ nav a:hover {
 
   .welcome-text h1 {
     padding-left: 0;
-    margin-top: -50em;
+    /* margin-top: -50em; */
   }
 
-  .welcome-text p {
-    margin-top: -50em; /* Reduce the space */
-  }
+  /* .welcome-text p {
+    margin-top: -50em;
+  } */
 
   header img {
     max-width: 30%; /* Make the header image even larger on very small screens */
@@ -350,12 +343,12 @@ nav a:hover {
   .welcome-text h1 {
       font-size: 1.5em;
       padding-left: 0;
-      margin-top: -50em;
+      /* margin-top: -50em; */
   }
 
   .welcome-text p {
       font-size: 1em;
-      margin-top: -50em; /* Reduce the space */
+      /* margin-top: -50em;  */
   }
 
   .welcome-image img {
@@ -577,7 +570,7 @@ width: 300px;
       margin: 0 auto;
     }
     .fun-image img {
-      max-width: 80%;
+      max-width: 70%;
     }
   }
 
@@ -604,7 +597,7 @@ width: 300px;
       margin: 0 auto;
     }
     .fun-image img {
-      max-width: 100%;
+      max-width: 70%;
     }
   }
 
