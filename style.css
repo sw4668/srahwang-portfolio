@@ -330,10 +330,6 @@ nav a:hover {
       padding: 10px 0;
   } */
 
-  .welcome-image img {
-    max-width: 80%;
-  }
-
   .welcome-text h1 {
     padding-left: 0;
     margin-top: -50em;
@@ -354,16 +350,29 @@ nav a:hover {
   .welcome-text h1 {
       font-size: 1.5em;
       padding-left: 0;
+      margin-top: -50em;
   }
 
   .welcome-text p {
       font-size: 1em;
-      margin: 0;
+      margin-top: -50em; /* Reduce the space */
   }
 
   .welcome-image img {
       max-width: 100%;
   }
+
+  header img {
+    max-width: 30%; /* Make the header image even larger on very small screens */
+    padding-top: 4%;
+  }
+
+  .welcome-text {
+    max-width: 100%;
+    margin-top: 0;
+    text-align: center;
+    padding-right: 0;
+}
 }
 
 
@@ -556,6 +565,46 @@ width: 300px;
 
     .welcome-image img {
       max-width: 60%; /* Adjust the size for smaller screens */
+    }
+
+    .portfolio-image {
+      max-width: 100%;
+    }
+
+    .fun-image {
+      padding-right: 0;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .fun-image img {
+      max-width: 80%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .portfolio-text {
+        max-width: 90%;
+    }
+  
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .welcome-image img {
+      max-width: 60%; /* Adjust the size for smaller screens */
+    }
+
+    .portfolio-image {
+      max-width: 100%;
+    }
+
+    .fun-image {
+      padding-right: 0;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .fun-image img {
+      max-width: 100%;
     }
   }
 
