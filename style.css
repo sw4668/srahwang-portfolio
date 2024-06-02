@@ -150,12 +150,12 @@ nav a:hover {
   max-width: 30%;
 }
 
-
-.type span{
+/* Typing effect */
+.type span {
   display:inline-block;
-  }
+}
 
-  .type h1{
+  .type h1 {
     overflow: hidden;
     white-space: nowrap;
   }
@@ -172,7 +172,7 @@ nav a:hover {
     animation-name:developer;
     animation-duration:12s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(9);
+    animation-timing-function: steps(11); 
    background-color: #FF914D;
     
   }
@@ -180,14 +180,14 @@ nav a:hover {
     animation-name:design;
     animation-duration:12s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(11);
+    animation-timing-function: steps(18);
     background-color: #FF914D;
   }
   .type h1 span:nth-of-type(3){
     animation-name: prog ;
     animation-duration:12s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(9);
+    animation-timing-function: steps(11);
     background-color: #FF914D;
   }
   
@@ -195,7 +195,7 @@ nav a:hover {
     animation-name: cross ;
     animation-duration:12s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(12);
+    animation-timing-function: steps(20);
     background-color: #FF914D;
   }
   
@@ -207,7 +207,7 @@ nav a:hover {
   }
   10%, 20% {
     /* width: calc(15px * 13);  */
-    width: calc(1.5em + 1vw * 13);
+    width: 11ch;
   }
 }
 
@@ -218,7 +218,7 @@ nav a:hover {
   30%, 45% {
     /* width: calc(15px * 20);  */
     /* Adjusted for "front end developer" */
-    width: calc(1.5em + 1vw * 20);
+    width: 18ch
   }
 }
 
@@ -229,7 +229,7 @@ nav a:hover {
   55%, 70% {
     /* width: calc(15px * 12);  */
     /* Adjusted for "visual artist" */
-    width: calc(1.5em + 1vw * 12);
+    width: 11ch
 
   }
 }
@@ -241,7 +241,7 @@ nav a:hover {
   80%, 95% {
     /* width: calc(15px * 21);  */
     /* Adjusted for "crossword enthusiast" */
-    width: calc(1.5em + 1vw * 21);
+    width: 20ch
   }
 }
 
@@ -259,7 +259,7 @@ nav a:hover {
   }
 
   .type h1 span {
-    display: block;
+    display: inline-block;
     margin: 0.5em 0;
   }
 }
@@ -275,7 +275,7 @@ nav a:hover {
   }
 
   .type h1 span {
-    display: block;
+    display: inline-block;
     margin: 0.4em 0;
   }
 }
@@ -291,7 +291,7 @@ nav a:hover {
   }
 
   .type h1 span {
-    display: block;
+    display: inline-block;
     margin: 0.3em 0;
   }
 }
@@ -353,19 +353,6 @@ nav a:hover {
   }
 }
 
-
-/* Base styles */
-/* body {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 100;
-font-style: normal;
-color: #333;
-line-height: 1.6;
-margin: 0;
-padding: 0;
-background-color: #bbc6ca;
-} */
 
 
 label {
@@ -505,7 +492,6 @@ height: auto;
 max-width: 40%;
 padding-right: 5%;
 }
-
 
 
 .highlight {
