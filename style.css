@@ -71,8 +71,8 @@ nav a:hover {
   display: none;
   cursor: pointer;
   position: absolute;
-  top: 20px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
+  top: 15px; /* Adjust as needed */
+  right: 17px; /* Adjust as needed */
   z-index: 1001; /* Ensure it is above other elements */
 }
 
@@ -107,7 +107,7 @@ nav a:hover {
   }
 
   header img {
-    max-width: 20%; /* Make the header image larger on smaller screens */
+    max-width: 23%; /* Make the header image larger on smaller screens */
   }
 }
 
@@ -641,6 +641,30 @@ form button[type="submit"]:hover {
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  #contact img{
+    max-width: 90%;
+  }
+
+  .form-footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .form-footer .h-captcha, 
+  form button[type="submit"] {
+    width: 100%; /* Full width */
+    margin-top: -10px;
+  }
+
+  form button[type="submit"] {
+    margin-top: 50px; /* Add more space above the submit button */
+  }
+
+  form {
+    padding: 0 20px; /* Add some padding to the form */
+  }
 }
 
 @media (max-width: 480px) {
@@ -651,6 +675,10 @@ form button[type="submit"]:hover {
   #contact {
     padding-left: 15%;
     padding-right: 15%;
+  }
+
+  #contact img{
+    max-width: 90%;
   }
 }
 
