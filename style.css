@@ -320,7 +320,7 @@ nav a:hover {
       max-width: 80%;
   }
 
-  nav {
+  /* nav {
       text-align: center;
       float: none;
   }
@@ -328,6 +328,19 @@ nav a:hover {
   nav a {
       display: block;
       padding: 10px 0;
+  } */
+
+  .welcome-image img {
+    max-width: 80%;
+  }
+
+  .welcome-text h1 {
+    padding-left: 0;
+    margin-top: -50em;
+  }
+
+  .welcome-text p {
+    margin-top: -50em; /* Reduce the space */
   }
 
   header img {
