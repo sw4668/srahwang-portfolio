@@ -709,12 +709,17 @@ form button[type="submit"]:hover {
   }
 
   #contact {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   #contact img{
     max-width: 110%;
+  }
+
+  .h-captcha {
+    transform: scale(0.8); /* Adjust the scale factor as needed */
+    transform-origin: 0 0;
   }
 }
 
