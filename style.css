@@ -345,15 +345,16 @@ nav a:hover {
 }
 
   .welcome-text h1 {
-      font-size: 12px;
+      font-size: 10px;
       /* padding-left: 0; */
-      margin-top: -50em;
+      margin-top: -60em;
+
   }
 
   .welcome-text p {
       font-size: 12px;
       text-align: center;
-      margin-top: -35em; 
+      margin-top: -50em; 
   }
 
   header img {
