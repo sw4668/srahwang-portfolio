@@ -107,8 +107,22 @@ document.addEventListener('DOMContentLoaded', function() {
               header.style.opacity = 0;
             }
           });
-});
 
+
+
+    // Initialize Typed.js after DOM is fully loaded
+  //   var options = {
+  //     strings: ["UX Designer.", "Front-End Developer.", "Visual Artist.", "Crossword Enthusiast."],
+  //     typeSpeed: 50,
+  //     backSpeed: 25,
+  //     loop: true,
+  //     onComplete: function() {
+  //         document.querySelector('.welcome-text').style.visibility = 'visible';
+  //     }
+  // };
+
+  // var typed = new Typed("#typing", options);
+});
 
 
   

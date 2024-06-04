@@ -116,6 +116,7 @@ nav a:hover {
   padding-right: 7%;
   overflow: hidden;
   margin-top: -37%;
+  min-height: 150px; /* Adjust as necessary */
 }
 
 
